@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Noto_Sans_JP, Cormorant_Garamond } from 'next/font/google';
+import { Noto_Sans_JP, Cormorant } from 'next/font/google';
 import { cn } from '@/lib/utils';
 
 const notoSansJP = Noto_Sans_JP({ 
@@ -8,9 +8,9 @@ const notoSansJP = Noto_Sans_JP({
   variable: '--font-noto-sans-jp',
 });
 
-const cormorant = Cormorant_Garamond({
+const cormorant = Cormorant({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-cormorant',
   display: 'swap',
 });

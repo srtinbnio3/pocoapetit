@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <div className="relative h-full flex items-center justify-center text-white text-center">
           <div>
-            <h1 className="heading-xl mb-6">POCO A PETIT</h1>
+            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium tracking-wider mb-6">POCO A PETIT</h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto">
               福岡・桜坂で愛され続ける創作和フレンチ。
               <br />

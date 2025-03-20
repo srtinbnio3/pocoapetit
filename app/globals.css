@@ -29,11 +29,11 @@
   body {
     @apply bg-background text-foreground;
   }
-  
+
   .font-sans {
     font-family: var(--font-noto-sans-jp), sans-serif;
   }
-  
+
   .font-serif {
     font-family: var(--font-cormorant), serif;
   }
@@ -45,14 +45,14 @@
   }
   
   .heading-xl {
-    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-medium;
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-medium tracking-wide;
   }
   
   .heading-lg {
-    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-medium;
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-medium tracking-wide;
   }
   
   .heading-md {
-    @apply font-serif text-2xl md:text-3xl lg:text-4xl font-medium;
+    @apply font-serif text-2xl md:text-3xl lg:text-4xl font-medium tracking-wide;
   }
 }
