@@ -184,7 +184,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <Button variant="outline" size="lg">
+            <Button variant="default" size="lg">
               Instagramをフォロー
             </Button>
           </div>

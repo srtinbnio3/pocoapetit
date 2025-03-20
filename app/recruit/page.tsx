@@ -19,7 +19,7 @@ export default function CareersPage() {
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative h-full flex items-center justify-center">
-          <h1 className="heading-xl text-white">Careers</h1>
+          <h1 className="heading-xl text-white">Recruit</h1>
         </div>
       </section>
 
@@ -51,7 +51,7 @@ export default function CareersPage() {
                   <li>・フランス料理の基礎知識</li>
                   <li>・創作意欲のある方</li>
                 </ul>
-                <Button variant="outline" className="w-full">
+                <Button variant="default" size="lg" className="w-full">
                   詳細を見る
                 </Button>
               </CardContent>
@@ -65,7 +65,7 @@ export default function CareersPage() {
                   <li>・ワインの知識</li>
                   <li>・接客が好きな方</li>
                 </ul>
-                <Button variant="outline" className="w-full">
+                <Button variant="default" size="lg" className="w-full">
                   詳細を見る
                 </Button>
               </CardContent>
@@ -79,7 +79,7 @@ export default function CareersPage() {
                   <li>・料理への情熱</li>
                   <li>・向上心のある方</li>
                 </ul>
-                <Button variant="outline" className="w-full">
+                <Button variant="default" size="lg" className="w-full">
                   詳細を見る
                 </Button>
               </CardContent>
