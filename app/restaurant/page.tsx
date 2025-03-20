@@ -56,29 +56,27 @@ export default function AccessPage() {
               </div>
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-serif mb-2">山田 太郎</h3>
-                  <p className="text-xl font-serif text-muted-foreground">Taro Yamada</p>
+                  <h3 className="text-4xl font-serif mb-2">YUYA TAKESUE</h3>
+                  <p className="text-xl font-serif text-muted-foreground">Executive Chef</p>
                 </div>
                 <div className="space-y-4 text-lg leading-relaxed">
                   <p>
-                    パリの三ツ星レストランで10年の修業を重ねた後、
-                    ミシュラン二つ星レストランの料理長を務める。
-                    2020年、故郷・福岡に「POCO A PETIT」をオープン。
+                    フレンチをメインに、イタリアンや和食まで幅広い料理を学び、
+                    ハイアット リージェンシーや群馬・草津町の旅館での経験を重ねる。
+                    2022年にワインソムリエの資格を取得し、27歳で「POCO A PETIT」をオープン。
                   </p>
                   <p>
-                    フランス料理の伝統的な技法をベースに、
-                    日本の食材と和の技法を取り入れた独創的な料理で、
-                    新しい美食の形を追求している。
+                    多彩な料理経験を活かし、ジャンルを超えた創造的な料理で、
+                    お客様に新しい味わいの体験を提供することを心がけている。
                   </p>
                   <p>
-                    「一皿一皿に物語を込めて、お客様に感動していただける料理を」
-                    という想いで、日々新しい創作に挑戦している。
+                    「素材の持ち味を最大限に引き出し、五感で楽しんでいただける料理を」
+                    という想いで、日々新たな挑戦を続けている。
                   </p>
                 </div>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>・フランス料理アカデミー会員</p>
-                  <p>・2018年 ボキューズ・ドール国際料理コンクール アジア大会 優勝</p>
-                  <p>・2019年 メートル・キュイジニエ・ド・フランス受賞</p>
+                  <p>・ワインソムリエ</p>
+                  <p>・元ハイアット リージェンシーシェフ</p>
                 </div>
               </div>
             </div>

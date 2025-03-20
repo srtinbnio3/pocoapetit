@@ -44,12 +44,12 @@ export default function Home() {
             <div>
               <h2 className="heading-md mb-6">Concept</h2>
               <p className="text-lg mb-6 leading-relaxed">
-                POCO A PETITは、フランス料理の伝統と日本の食文化を融合させた、
-                独自の創作和フレンチを提供するレストランです。
-                季節の食材を活かしながら、一皿一皿に込められた物語とともに、
-                心に残る美食体験をお届けいたします。
+                "少しずつ色々楽しむ"をコンセプトに、名物の【9種の前菜小鉢プレート】をはじめ、
+                様々な味わいを一度にお楽しみいただける料理の数々をご提供いたします。
+                桜坂の閑静な住宅街に佇む一軒家レストランで、落ち着いた雰囲気の中、
+                大切な方との特別な日に、また日常の贅沢として、心に残るお食事のひとときをご堪能ください。
               </p>
-              <Button variant="outline" size="lg">
+              <Button variant="default" size="lg">
                 詳しく見る
               </Button>
             </div>
