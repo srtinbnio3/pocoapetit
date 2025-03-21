@@ -83,28 +83,57 @@ export default function AccessPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-            <Card>
-              <CardContent className="p-8">
-                <Clock className="w-8 h-8 text-primary mb-4" />
-                <h3 className="text-xl font-serif mb-4">営業時間</h3>
-                <div className="space-y-2 text-muted-foreground">
-                  <p>ディナー 17:30〜22:00</p>
-                  <p>(L.O. 20:30)</p>
-                  <p>定休日：月曜日</p>
-                  <p className="text-sm">※祝日の場合は営業、翌日休業</p>
+          <Card className="mb-12">
+            <CardContent className="p-8">
+              <Clock className="w-8 h-8 text-primary mb-4" />
+              <h3 className="text-xl font-serif mb-4">営業時間</h3>
+              <div className="space-y-6 text-muted-foreground">
+                <div>
+                  <p className="font-medium text-foreground mb-2">月・火・水・木・祝前日・祝後日</p>
+                  <p>12:00 - 14:00</p>
+                  <p>18:00 - 22:00</p>
                 </div>
-              </CardContent>
-            </Card>
+                <div>
+                  <p className="font-medium text-foreground mb-2">金</p>
+                  <p>12:00 - 14:00</p>
+                  <p>18:00 - 23:00</p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-2">土</p>
+                  <p>11:30 - 15:00</p>
+                  <p>18:00 - 23:00</p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-2">日・祝日</p>
+                  <p>11:30 - 15:00</p>
+                  <p>18:00 - 22:00</p>
+                </div>
+                <div className="pt-4 border-t">
+                  <p className="font-medium text-foreground mb-2">【ランチ】</p>
+                  <p>平日　12:00 一斉スタートのみ</p>
+                  <p>土日祝　11:30・13:30 スタートの2部制</p>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground mb-2">【ディナー】</p>
+                  <p>《コース》18:00〜(20:00最終入店)</p>
+                  <p>《ワインバー営業》(金・土)お席空き次第〜23:00(日〜木22:00)</p>
+                </div>
+                <p className="pt-4 border-t">
+                  店休日は不定休です、営業日はInstagramからご確認ください。
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             <Card>
               <CardContent className="p-8">
                 <Utensils className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-xl font-serif mb-4">席数情報</h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>テーブル席：24席</p>
-                  <p>カウンター席：6席</p>
-                  <p>個室：1室（4名様まで）</p>
-                  <p className="text-sm">※貸切は20名様より承ります</p>
+                  <p className="text-2xl font-medium text-foreground">9席</p>
+                  <p>（カウンター3席、テーブル6席）</p>
+                  <p className="pt-4 border-t text-sm">※全席禁煙</p>
                 </div>
               </CardContent>
             </Card>
@@ -113,9 +142,8 @@ export default function AccessPage() {
                 <Car className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-xl font-serif mb-4">駐車場</h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>専用駐車場：4台</p>
-                  <p>提携駐車場：近隣に有料駐車場あり</p>
-                  <p className="text-sm">※ご予約時にお申し付けください</p>
+                  <p className="text-2xl font-medium text-foreground">無</p>
+                  <p>近隣にコインパーキング有り</p>
                 </div>
               </CardContent>
             </Card>
