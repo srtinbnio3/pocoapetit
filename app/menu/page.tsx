@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/ui/navigation';
+import Footer from '@/components/ui/footer';
 
 export default function MenuPage() {
   return (
@@ -199,6 +200,7 @@ export default function MenuPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Phone, Car, Train, Bus, Utensils } from 'lucide-react';
+import Footer from '@/components/ui/footer';
 
 export default function AccessPage() {
   return (
@@ -180,6 +181,7 @@ export default function AccessPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

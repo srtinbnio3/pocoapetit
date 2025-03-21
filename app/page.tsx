@@ -2,6 +2,7 @@ import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChefHat, MapPin, Clock, Phone, Instagram } from 'lucide-react';
+import Footer from '@/components/ui/footer';
 
 export default function Home() {
   return (
@@ -190,6 +191,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

@@ -5,6 +5,7 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import Footer from '@/components/ui/footer';
 
 export default function CareersPage() {
   return (
@@ -189,6 +190,7 @@ export default function CareersPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

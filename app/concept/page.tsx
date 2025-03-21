@@ -1,6 +1,7 @@
 import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Utensils, Wine, Leaf } from 'lucide-react';
+import Footer from '@/components/ui/footer';
 
 export default function ConceptPage() {
   return (
@@ -124,6 +125,7 @@ export default function ConceptPage() {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 }

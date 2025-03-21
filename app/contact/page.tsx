@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import Footer from '@/components/ui/footer';
 
 export default function ContactPage() {
   return (
@@ -69,6 +70,7 @@ export default function ContactPage() {
           </Card>
         </div>
       </section>
+      <Footer />
     </>
   );
 }
