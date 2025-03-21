@@ -3,13 +3,22 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChefHat, MapPin, Clock, Phone, Instagram } from 'lucide-react';
 import Footer from '@/components/ui/footer';
-import { getInstagramFeed } from '@/lib/instagram';
+import { getInstagramFeed, type InstagramPost } from '@/lib/instagram';
+import { Suspense } from 'react';
+import Loading from '@/components/ui/loading';
+import { cn } from '@/lib/utils';
+import { buttonVariants } from '@/components/ui/button';
 
 export default async function Home() {
-  const instagramPosts = await getInstagramFeed();
+  let instagramPosts: InstagramPost[] = [];
+  try {
+    instagramPosts = await getInstagramFeed();
+  } catch (error) {
+    console.error('Error fetching Instagram feed:', error);
+  }
 
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Navigation />
       
       {/* Hero Section */}
@@ -171,7 +180,7 @@ export default async function Home() {
             <h2 className="heading-md">Instagram</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {instagramPosts.length > 0 ? (
+            {instagramPosts && instagramPosts.length > 0 ? (
               instagramPosts.map((post) => (
                 <a
                   key={post.id}
@@ -193,7 +202,6 @@ export default async function Home() {
                 </a>
               ))
             ) : (
-              // Fallback images when API fails or during development
               <>
                 {[1, 2, 3, 4].map((i) => (
                   <div
@@ -210,19 +218,24 @@ export default async function Home() {
             )}
           </div>
           <div className="text-center mt-8">
-            <Button variant="default" size="lg" asChild>
-              <a
-                href="https://www.instagram.com/your_instagram_handle"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagramをフォロー
-              </a>
-            </Button>
+            <a
+              href="https://www.instagram.com/poco_a_petit/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                buttonVariants({
+                  variant: "default",
+                  size: "lg",
+                }),
+                "no-underline"
+              )}
+            >
+              Instagramをフォロー
+            </a>
           </div>
         </div>
       </section>
       <Footer />
-    </>
+    </Suspense>
   );
 }
