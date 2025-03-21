@@ -10,12 +10,8 @@ import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
 
 export default async function Home() {
-  let instagramPosts: InstagramPost[] = [];
-  try {
-    instagramPosts = await getInstagramFeed();
-  } catch (error) {
-    console.error('Error fetching Instagram feed:', error);
-  }
+  // 一時的にInstagram投稿の取得を無効化
+  const instagramPosts: InstagramPost[] = [];
 
   return (
     <Suspense fallback={<Loading />}>
