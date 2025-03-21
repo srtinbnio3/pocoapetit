@@ -195,54 +195,17 @@ export default async function Home() {
             ) : (
               // Fallback images when API fails or during development
               <>
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="前菜の盛り合わせ"
-                    className="w-full h-full object-cover"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="メインディッシュ"
-                    className="w-full h-full object-cover"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="店内の様子"
-                    className="w-full h-full object-cover"
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
-                    alt="デザート"
-                    className="w-full h-full object-cover"
-                  />
-                </a>
+                {[1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    className="aspect-square rounded-lg bg-muted-foreground/10 flex flex-col items-center justify-center p-4 text-center space-y-2"
+                  >
+                    <Instagram className="w-8 h-8 text-muted-foreground/50" />
+                    <p className="text-sm text-muted-foreground">
+                      Instagram投稿を読み込めませんでした
+                    </p>
+                  </div>
+                ))}
               </>
             )}
           </div>
