@@ -9,22 +9,36 @@ export default function Navigation() {
           <Link href="/" className="font-serif text-2xl tracking-wide">
             POCO A PETIT
           </Link>
-          <div className="space-x-4">
-            <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
-              <Link href="/concept">Concept</Link>
-            </Button>
-            <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
-              <Link href="/menu">Menu</Link>
-            </Button>
-            <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
-              <Link href="/restaurant">Restaurant</Link>
-            </Button>
-            <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
-              <Link href="/recruit">Recruit</Link>
-            </Button>
-            <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
-              <Link href="/contact">Contact</Link>
-            </Button>
+          <div className="flex items-center space-x-4">
+            <div className="space-x-4">
+              <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
+                <Link href="/concept">Concept</Link>
+              </Button>
+              <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
+                <Link href="/menu">Menu</Link>
+              </Button>
+              <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
+                <Link href="/restaurant">Restaurant</Link>
+              </Button>
+              <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
+                <Link href="/recruit">Recruit</Link>
+              </Button>
+              <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
+                <Link href="/contact">Contact</Link>
+              </Button>
+            </div>
+            <div className="ml-4 border-l pl-4">
+              <Button variant="default" asChild>
+                <a
+                  href="https://www.tablecheck.com/ja/shops/pocoapetit/reserve"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-serif tracking-wide text-lg"
+                >
+                  ご予約
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
