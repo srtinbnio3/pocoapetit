@@ -159,8 +159,14 @@ export default async function Home() {
                     <p>092-XXX-XXXX</p>
                   </div>
                 </div>
-                <Button size="lg" className="w-full">
-                  オンライン予約
+                <Button size="lg" className="w-full" asChild>
+                  <a
+                    href="https://www.tablecheck.com/ja/shops/pocoapetit/reserve"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    オンライン予約
+                  </a>
                 </Button>
               </div>
             </div>
