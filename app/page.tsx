@@ -3,8 +3,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ChefHat, MapPin, Clock, Phone, Instagram } from 'lucide-react';
 import Footer from '@/components/ui/footer';
+import { getInstagramFeed } from '@/lib/instagram';
 
-export default function Home() {
+export default async function Home() {
+  const instagramPosts = await getInstagramFeed();
+
   return (
     <>
       <Navigation />
@@ -119,7 +122,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.846338317795!2d130.39!3d33.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzQ4LjAiTiAxMzDCsDIzJzI0LjAiRQ!5e0!3m2!1sen!2sjp!4v1620000000000!5m2!1sen!2sjp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.9797367238248!2d130.38439247637405!3d33.57987537333846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193b2162cbac7%3A0x41c4e08711f30949!2zUE9DTyBBIFBFVElUKOODneOCs-OCouODmuODhuOCoynmoZzlnYI!5e0!3m2!1sja!2sjp!4v1742553678193!5m2!1sja!2sjp"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
@@ -134,7 +137,7 @@ export default function Home() {
                   <MapPin className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-serif text-lg mb-2">住所</h3>
-                    <p>〒810-0024 福岡県福岡市中央区桜坂X-XX-XX</p>
+                    <p>〒810-0024 福岡県福岡市中央区桜坂２丁目７−１１ Ｙｏｓｈｉｄａ Ｈｏｕｓｅ 101</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -168,25 +171,90 @@ export default function Home() {
             <h2 className="heading-md">Instagram</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((i) => (
-              <a
-                key={i}
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
-              >
-                <img
-                  src={`https://images.unsplash.com/photo-${i}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80`}
-                  alt={`Instagram post ${i}`}
-                  className="w-full h-full object-cover"
-                />
-              </a>
-            ))}
+            {instagramPosts.length > 0 ? (
+              instagramPosts.map((post) => (
+                <a
+                  key={post.id}
+                  href={post.permalink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group aspect-square overflow-hidden rounded-lg relative"
+                >
+                  <img
+                    src={post.media_url}
+                    alt={post.caption?.slice(0, 100) || '料理の写真'}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <p className="text-white text-sm px-4 text-center line-clamp-3">
+                      {post.caption || ''}
+                    </p>
+                  </div>
+                </a>
+              ))
+            ) : (
+              // Fallback images when API fails or during development
+              <>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="前菜の盛り合わせ"
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="メインディッシュ"
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="店内の様子"
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    alt="デザート"
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </>
+            )}
           </div>
           <div className="text-center mt-8">
-            <Button variant="default" size="lg">
-              Instagramをフォロー
+            <Button variant="default" size="lg" asChild>
+              <a
+                href="https://www.instagram.com/your_instagram_handle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagramをフォロー
+              </a>
             </Button>
           </div>
         </div>

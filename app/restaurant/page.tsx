@@ -130,7 +130,7 @@ export default function AccessPage() {
                       <MapPin className="w-6 h-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-serif text-lg mb-2">住所</h3>
-                        <p>〒810-0024<br />福岡県福岡市中央区桜坂X-XX-XX</p>
+                        <p>〒810-0024<br />福岡県福岡市中央区桜坂２丁目７−１１ Ｙｏｓｈｉｄａ Ｈｏｕｓｅ 101</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -169,7 +169,7 @@ export default function AccessPage() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.846338317795!2d130.39!3d33.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzQ4LjAiTiAxMzDCsDIzJzI0LjAiRQ!5e0!3m2!1sen!2sjp!4v1620000000000!5m2!1sen!2sjp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.9797367238248!2d130.38439247637405!3d33.57987537333846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193b2162cbac7%3A0x41c4e08711f30949!2zUE9DTyBBIFBFVElUKOODneOCs-OCouODmuODhuOCoynmoZzlnYI!5e0!3m2!1sja!2sjp!4v1742553678193!5m2!1sja!2sjp"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '500px' }}
