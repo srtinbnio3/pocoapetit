@@ -1,7 +1,10 @@
 import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ChefHat, Utensils, GraduationCap } from 'lucide-react';
+import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 export default function CareersPage() {
   return (
@@ -41,47 +44,146 @@ export default function CareersPage() {
       <section className="py-24 bg-muted">
         <div className="container-custom">
           <h2 className="heading-md text-center mb-12">募集職種</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
             <Card>
               <CardContent className="p-8">
-                <ChefHat className="w-12 h-12 text-primary mb-6" />
-                <h3 className="text-xl font-serif mb-4">シェフ・調理スタッフ</h3>
-                <ul className="space-y-4 mb-6">
-                  <li>・経験：3年以上</li>
-                  <li>・フランス料理の基礎知識</li>
-                  <li>・創作意欲のある方</li>
-                </ul>
-                <Button variant="default" size="lg" className="w-full">
-                  詳細を見る
-                </Button>
+                <h3 className="text-xl font-serif mb-4">社員募集</h3>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-medium mb-2">■業務内容</h4>
+                    <p>調理業務、サービス業務</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■勤務時間</h4>
+                    <p>9：00～23：00　実働8Hのシフト制／時間外勤務あり</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■給与</h4>
+                    <p>月給23万円～　（試用期間：アルバイト雇用）</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■賞与</h4>
+                    <p>年2回</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■諸手当</h4>
+                    <p>残業手当、深夜手当、通勤交通費支給</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■休日・休暇</h4>
+                    <p>週休二日制、夏季休暇、年末年始休暇、シフト制<br />
+                    有給休暇　入社後6カ月後より年間10日～</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■その他</h4>
+                    <ul className="space-y-1">
+                      <li>・試用期間あり（3カ月～）</li>
+                      <li>・社会保険完備</li>
+                      <li>・1日6時間以上勤務の場合賄いあり</li>
+                      <li>・昇給、賞与は本人実績、会社実績による</li>
+                      <li>・ソムリエ有資格者、ワインに詳しい方歓迎</li>
+                    </ul>
+                  </div>
+                </div>
               </CardContent>
             </Card>
+
             <Card>
               <CardContent className="p-8">
-                <Utensils className="w-12 h-12 text-primary mb-6" />
-                <h3 className="text-xl font-serif mb-4">サービススタッフ</h3>
-                <ul className="space-y-4 mb-6">
-                  <li>・経験：2年以上</li>
-                  <li>・ワインの知識</li>
-                  <li>・接客が好きな方</li>
-                </ul>
-                <Button variant="default" size="lg" className="w-full">
-                  詳細を見る
-                </Button>
+                <h3 className="text-xl font-serif mb-4">アルバイト募集</h3>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-medium mb-2">■業務内容</h4>
+                    <ul className="space-y-1">
+                      <li>A：ホール業務</li>
+                      <li>B：キッチン業務（食材の切り出しや仕込み）</li>
+                      <li>C：清掃、皿洗い、片付けなど</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■勤務時間</h4>
+                    <p>10:00～23:00の間で、1日5時間～相談可能</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■給与</h4>
+                    <p>時給1000円～</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■諸手当</h4>
+                    <p>残業手当、深夜手当、通勤交通費支給（上限1日500円）</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■休日・休暇</h4>
+                    <p>シフト制</p>
+                  </div>
+                  <div>
+                    <h4 className="font-medium mb-2">■その他</h4>
+                    <ul className="space-y-1">
+                      <li>・試用期間あり（1カ月～）</li>
+                      <li>・勤務条件に応じて保険加入</li>
+                      <li>・1日6時間以上勤務の場合賄いあり</li>
+                      <li>・昇給は本人実績による</li>
+                      <li>・ソムリエ有資格者、ワインに詳しい方歓迎</li>
+                    </ul>
+                  </div>
+                </div>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Application Form */}
+          <div className="max-w-3xl mx-auto">
             <Card>
               <CardContent className="p-8">
-                <GraduationCap className="w-12 h-12 text-primary mb-6" />
-                <h3 className="text-xl font-serif mb-4">見習い・研修生</h3>
-                <ul className="space-y-4 mb-6">
-                  <li>・未経験可</li>
-                  <li>・料理への情熱</li>
-                  <li>・向上心のある方</li>
-                </ul>
-                <Button variant="default" size="lg" className="w-full">
-                  詳細を見る
-                </Button>
+                <form className="space-y-8">
+                  <div className="space-y-4">
+                    <Label htmlFor="position">希望職種</Label>
+                    <RadioGroup defaultValue="社員" id="position" className="space-y-2">
+                      <div className="flex items-center space-x-2">
+                        <RadioGroupItem value="社員" id="employee" />
+                        <Label htmlFor="employee">社員</Label>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <RadioGroupItem value="アルバイト" id="parttime" />
+                        <Label htmlFor="parttime">アルバイト</Label>
+                      </div>
+                    </RadioGroup>
+                  </div>
+
+                  <div className="space-y-4">
+                    <Label htmlFor="name">お名前</Label>
+                    <Input id="name" placeholder="山田 太郎" required />
+                  </div>
+
+                  <div className="space-y-4">
+                    <Label htmlFor="kana">フリガナ</Label>
+                    <Input id="kana" placeholder="ヤマダ タロウ" required />
+                  </div>
+
+                  <div className="space-y-4">
+                    <Label htmlFor="phone">ご連絡先TEL</Label>
+                    <Input id="phone" type="tel" placeholder="090-XXXX-XXXX" required />
+                  </div>
+
+                  <div className="space-y-4">
+                    <Label htmlFor="email">メールアドレス</Label>
+                    <Input id="email" type="email" placeholder="example@email.com" required />
+                  </div>
+
+                  <div className="space-y-4">
+                    <Label htmlFor="message">志望動機や自己PR</Label>
+                    <Textarea
+                      id="message"
+                      placeholder="志望動機や自己PRを記入してください"
+                      rows={6}
+                      required
+                    />
+                  </div>
+
+                  <Button type="submit" className="w-full">
+                    応募する
+                  </Button>
+                </form>
               </CardContent>
             </Card>
           </div>
