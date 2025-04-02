@@ -1,0 +1,5 @@
+.env filter=git-crypt diff=git-crypt
+*.pem filter=git-crypt diff=git-crypt
+*.key filter=git-crypt diff=git-crypt
+*.crt filter=git-crypt diff=git-crypt
+config/secrets.yml filter=git-crypt diff=git-crypt 
