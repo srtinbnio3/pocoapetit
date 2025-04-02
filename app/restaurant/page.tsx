@@ -2,6 +2,7 @@ import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Clock, Phone, Car, Train, Bus, Utensils } from 'lucide-react';
 import Footer from '@/components/ui/footer';
+import Image from 'next/image';
 
 export default function AccessPage() {
   return (
@@ -11,10 +12,12 @@ export default function AccessPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh]">
         <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1515668236457-83c3b8764839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          <Image
+            src="/IMG_4125.JPG"
             alt="Restaurant exterior"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover object-top"
+            priority
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
@@ -36,10 +39,12 @@ export default function AccessPage() {
               </p>
             </div>
             <div className="relative aspect-[4/3]">
-              <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              <Image
+                src="/IMG_2646.jpeg"
                 alt="Restaurant interior"
-                className="w-full h-full object-cover rounded-lg"
+                fill
+                className="object-cover rounded-lg"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
@@ -49,10 +54,12 @@ export default function AccessPage() {
             <h2 className="heading-md text-center mb-16">シェフ紹介</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="relative aspect-[3/4]">
-                <img
-                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1977&q=80"
+                <Image
+                  src="/IMG_7351.jpg"
                   alt="Chef portrait"
-                  className="w-full h-full object-cover rounded-lg"
+                  fill
+                  className="object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
               <div className="space-y-6">
@@ -62,9 +69,11 @@ export default function AccessPage() {
                 </div>
                 <div className="space-y-4 text-lg leading-relaxed">
                   <p>
-                    フレンチをメインに、イタリアンや和食まで幅広い料理を学び、
-                    ハイアット リージェンシーや群馬・草津町の旅館での経験を重ねる。
-                    2022年にワインソムリエの資格を取得し、27歳で「POCO A PETIT」をオープン。
+                    フレンチをメインにイタリアンや和食まで幅広い料理を学び
+                    ハイアット リージェンシー福岡や群馬・草津町の旅館での経験を重ねる。
+                  </p>
+                  <p>
+                    2022年にソムリエの資格を取得し、26歳で「POCO A PETIT」を地元福岡にオープン。
                   </p>
                   <p>
                     多彩な料理経験を活かし、ジャンルを超えた創造的な料理で、
@@ -74,10 +83,6 @@ export default function AccessPage() {
                     「素材の持ち味を最大限に引き出し、五感で楽しんでいただける料理を」
                     という想いで、日々新たな挑戦を続けている。
                   </p>
-                </div>
-                <div className="space-y-2 text-muted-foreground">
-                  <p>・ワインソムリエ</p>
-                  <p>・元ハイアット リージェンシーシェフ</p>
                 </div>
               </div>
             </div>

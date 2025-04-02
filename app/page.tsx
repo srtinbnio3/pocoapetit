@@ -8,6 +8,7 @@ import { Suspense } from 'react';
 import Loading from '@/components/ui/loading';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
+import Image from 'next/image';
 
 export default async function Home() {
   // 一時的にInstagram投稿の取得を無効化
@@ -20,10 +21,12 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="relative h-screen">
         <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          <Image
+            src="/IMG_4128.JPG"
             alt="POCO A PETIT"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            priority
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
@@ -44,10 +47,11 @@ export default async function Home() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3]">
-              <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              <Image
+                src="/IMG_4136.JPG"
                 alt="Restaurant interior"
-                className="w-full h-full object-cover rounded-lg"
+                fill
+                className="object-cover rounded-lg"
               />
             </div>
             <div>
