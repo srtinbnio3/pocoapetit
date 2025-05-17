@@ -153,14 +153,15 @@ export default async function Home() {
                   <Clock className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-serif text-lg mb-2">営業時間</h3>
-                    <p>ディナー 17:30〜22:00 (L.O. 20:30)<br />定休日：月曜日</p>
+                    <p>ランチ：12:00一斉スタートのみです</p>
+                    <p>ディナー：18:00〜19:00の間でお好きなお時間をお選びいただけます<br />定休日：instagramでお知らせします</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 text-primary mt-1" />
                   <div>
-                    <h3 className="font-serif text-lg mb-2">ご予約・お問い合わせ</h3>
-                    <p>092-XXX-XXXX</p>
+                    <h3 className="font-serif text-lg mb-2">ご予約</h3>
+                    <p>こちらからお願いします</p>
                   </div>
                 </div>
                 <Button size="lg" className="w-full" asChild>
