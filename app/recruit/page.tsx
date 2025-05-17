@@ -1,3 +1,9 @@
+/*
+ * このページは一時的に非表示となっています。
+ * ナビゲーションメニューからも削除されています。
+ * 必要に応じて再度有効化することができます。
+ */
+
 import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';

@@ -60,12 +60,14 @@ export default function Navigation() {
                 <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
                   <Link href="/restaurant">Restaurant</Link>
                 </Button>
+                {/* RecruitとContactページは一時的に非表示
                 <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
                   <Link href="/recruit">Recruit</Link>
                 </Button>
                 <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
                   <Link href="/contact">Contact</Link>
                 </Button>
+                */}
               </div>
               <div className="ml-4 border-l pl-4">
                 <ReservationButton />
@@ -87,12 +89,14 @@ export default function Navigation() {
               <Button variant="ghost" asChild className="font-serif tracking-wide text-lg w-full justify-start">
                 <Link href="/restaurant">Restaurant</Link>
               </Button>
+              {/* RecruitとContactページは一時的に非表示
               <Button variant="ghost" asChild className="font-serif tracking-wide text-lg w-full justify-start">
                 <Link href="/recruit">Recruit</Link>
               </Button>
               <Button variant="ghost" asChild className="font-serif tracking-wide text-lg w-full justify-start">
                 <Link href="/contact">Contact</Link>
               </Button>
+              */}
             </div>
           </div>
         )}
