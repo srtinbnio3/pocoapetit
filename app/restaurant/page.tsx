@@ -93,38 +93,15 @@ export default function AccessPage() {
               <Clock className="w-8 h-8 text-primary mb-4" />
               <h3 className="text-xl font-serif mb-4">営業時間</h3>
               <div className="space-y-6 text-muted-foreground">
-                <div>
-                  <p className="font-medium text-foreground mb-2">月・火・水・木・祝前日・祝後日</p>
-                  <p>12:00 - 14:00</p>
-                  <p>18:00 - 22:00</p>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground mb-2">金</p>
-                  <p>12:00 - 14:00</p>
-                  <p>18:00 - 23:00</p>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground mb-2">土</p>
-                  <p>11:30 - 15:00</p>
-                  <p>18:00 - 23:00</p>
-                </div>
-                <div>
-                  <p className="font-medium text-foreground mb-2">日・祝日</p>
-                  <p>11:30 - 15:00</p>
-                  <p>18:00 - 22:00</p>
-                </div>
-                <div className="pt-4 border-t">
                   <p className="font-medium text-foreground mb-2">【ランチ】</p>
                   <p>平日　12:00 一斉スタートのみ</p>
                   <p>土日祝　11:30・13:30 スタートの2部制</p>
-                </div>
                 <div>
                   <p className="font-medium text-foreground mb-2">【ディナー】</p>
-                  <p>《コース》18:00〜(20:00最終入店)</p>
-                  <p>《ワインバー営業》(金・土)お席空き次第〜23:00(日〜木22:00)</p>
+                  <p>《コース》18:00〜19:00の間でお好きなお時間をお選びいただけます</p>
                 </div>
                 <p className="pt-4 border-t">
-                  店休日は不定休です、営業日はInstagramからご確認ください。
+                  店休日は不定休です、営業日は<a href="https://www.instagram.com/poco_a_petit/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:underline">Instagram</a>からご確認ください。
                 </p>
               </div>
             </CardContent>
@@ -136,8 +113,8 @@ export default function AccessPage() {
                 <Utensils className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-xl font-serif mb-4">席数情報</h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <p className="text-2xl font-medium text-foreground">9席</p>
-                  <p>（カウンター3席、テーブル6席）</p>
+                  <p className="text-2xl font-medium text-foreground">8席</p>
+                  <p>（カウンター4席、テーブル4席）</p>
                   <p className="pt-4 border-t text-sm">※全席禁煙</p>
                 </div>
               </CardContent>
@@ -167,32 +144,12 @@ export default function AccessPage() {
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
-                      <Phone className="w-6 h-6 text-primary mt-1" />
-                      <div>
-                        <h3 className="font-serif text-lg mb-2">お電話</h3>
-                        <p>092-XXX-XXXX</p>
-                        <p className="text-sm text-muted-foreground mt-1">
-                          ※ご予約・お問い合わせはお電話にて承ります
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-4">
                       <Train className="w-6 h-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-serif text-lg mb-2">電車でお越しの場合</h3>
                         <ul className="space-y-2">
-                          <li>・地下鉄七隈線 桜坂駅 1番出口より徒歩3分</li>
-                          <li>・西鉄バス 桜坂バス停より徒歩1分</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-4">
-                      <Car className="w-6 h-6 text-primary mt-1" />
-                      <div>
-                        <h3 className="font-serif text-lg mb-2">お車でお越しの場合</h3>
-                        <ul className="space-y-2">
-                          <li>・福岡都市高速「天神北」出口より約10分</li>
-                          <li>・国道202号線より桜坂方面へ</li>
+                          <li>・地下鉄七隈線 桜坂駅より徒歩5分</li>
+                          <li>・西鉄バス 桜坂バス停より徒歩5分</li>
                         </ul>
                       </div>
                     </div>
