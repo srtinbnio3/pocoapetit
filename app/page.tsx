@@ -1,14 +1,14 @@
+import { Suspense } from 'react';
+import Image from 'next/image';
 import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ChefHat, MapPin, Clock, Phone, Instagram } from 'lucide-react';
+import { MapPin, Clock, Phone, Instagram } from 'lucide-react';
 import Footer from '@/components/ui/footer';
 import { getInstagramFeed, type InstagramPost } from '@/lib/instagram';
-import { Suspense } from 'react';
 import Loading from '@/components/ui/loading';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from '@/components/ui/button';
-import Image from 'next/image';
 
 export default async function Home() {
   // 一時的にInstagram投稿の取得を無効化
