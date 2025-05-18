@@ -74,33 +74,51 @@ export default async function Home() {
       <section className="py-24 bg-muted">
         <div className="container-custom">
           <h2 className="heading-md text-center mb-12">Menu</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card>
               <CardContent className="p-6">
                 <img
                   src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Casual Lunch Course"
+                  alt="Light Course"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-xl font-serif mb-2">《選べるメイン》カジュアルランチコース</h3>
+                <h3 className="text-xl font-serif mb-2">(ランチ限定)ライトコース</h3>
                 <p className="text-muted-foreground mb-4">
-                  メインディッシュは当日お選びいただけるカジュアルなランチコース。
-                  当店名物の9種の前菜プレートと共にお楽しみください。
+                  カジュアルに当店のお料理をお楽しみいただけるランチ限定のライトコースです。
+                  旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                  12品のお料理と3品のデザートを少しずつ様々な味わいをご堪能ください。
                 </p>
-                <p className="font-serif text-lg">¥3,950</p>
+                <p className="font-serif text-lg">¥3,800</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
                 <img
                   src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                  alt="Dinner Full Course"
+                  alt="Standard Course"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-xl font-serif mb-2">ディナーフルコース</h3>
+                <h3 className="text-xl font-serif mb-2">(ランチ/ディナー共通)スタンダードコース</h3>
                 <p className="text-muted-foreground mb-4">
-                  前菜小鉢プレート含む最大15品のお料理、2品のデザートを少しずつ楽しめるフルコース。
-                  季節感のあるお料理の数々をお楽しみください。
+                  クマのモナカを使用したアミューズ、メインディッシュのお肉料理、デザートまで当店の魅力を最大限楽しめるコースです。
+                  旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                  14品のお料理と4品のデザートを少しずつ様々な味わいをご堪能ください。
+                </p>
+                <p className="font-serif text-lg">¥5,500</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <img
+                  src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                  alt="Beef Cheek Course"
+                  className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
+                />
+                <h3 className="text-xl font-serif mb-2">(ランチ/ディナー共通)メインディッシュ「牛ホホ肉赤ワイン煮コース」</h3>
+                <p className="text-muted-foreground mb-4">
+                  スタンダードコースのメインディッシュお肉料理を「国産牛ほほ肉の赤ワイン煮込み」でお楽しみいただける特別なコースです。
+                  旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                  14品のお料理と4品のデザートを少しずつ様々な味わいをご堪能ください。
                 </p>
                 <p className="font-serif text-lg">¥6,600</p>
               </CardContent>
@@ -114,8 +132,9 @@ export default async function Home() {
                 />
                 <h3 className="text-xl font-serif mb-2">【TAKE OUT】sobacoカヌレ</h3>
                 <p className="text-muted-foreground mb-4">
-                  当店のスペシャリテである蕎麦粉のカヌレ。
-                  蕎麦粉とラム酒が合わさる事で唯一無二の香りを楽しめます。
+                  当店のスペシャリテである蕎麦粉のカヌレです。
+                  蕎麦粉とラム酒が合わさる事で唯一無二の香りを楽しめ
+                  外はカリッと、中はしっとり食感にこだわったカヌレです。
                 </p>
                 <p className="font-serif text-lg">¥450</p>
               </CardContent>
