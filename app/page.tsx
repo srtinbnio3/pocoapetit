@@ -78,7 +78,7 @@ export default async function Home() {
             <Card>
               <CardContent className="p-6">
                 <img
-                  src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  src="/(ランチ限定)《3800yen》ライトコース　(5:1〜).jpg"
                   alt="Light Course"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
@@ -94,7 +94,7 @@ export default async function Home() {
             <Card>
               <CardContent className="p-6">
                 <img
-                  src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  src="/(ランチ:ディナー共通)《5500yen》スタンダードコース(5:1〜).jpg"
                   alt="Standard Course"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
@@ -110,7 +110,7 @@ export default async function Home() {
             <Card>
               <CardContent className="p-6">
                 <img
-                  src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                  src="/(ランチ:ディナー共通)《6600yen》メインディッシュ「牛ホホ肉赤ワイン煮」コース(5:1〜).jpg"
                   alt="Beef Cheek Course"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
@@ -126,7 +126,7 @@ export default async function Home() {
             <Card>
               <CardContent className="p-6">
                 <img
-                  src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                  src="/【TAKE OUT】sobacoカヌレ.jpeg"
                   alt="Sobaco Canelé"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
