@@ -18,6 +18,12 @@ const cormorant = Cormorant({
 export const metadata: Metadata = {
   title: 'POCO A PETIT - 福岡・桜坂の創作和フレンチ',
   description: '福岡・桜坂で愛され続ける創作和フレンチレストラン「POCO A PETIT」。伝統的なフレンチと和の技法を融合させた独創的な料理をご提供いたします。',
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({
