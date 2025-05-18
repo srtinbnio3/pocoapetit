@@ -103,21 +103,21 @@ export default function ConceptPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="aspect-square">
               <img
-                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src="/GallerySection1.jpeg"
                 alt="Dish presentation"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover object-[30%_center] rounded-lg"
               />
             </div>
             <div className="aspect-square">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                src="/GallerySection2.jpeg"
                 alt="Restaurant interior"
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
             <div className="aspect-square">
               <img
-                src="https://images.unsplash.com/photo-1515443961218-a51367888e4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src="/GallerySection3.jpeg"
                 alt="Wine selection"
                 className="w-full h-full object-cover rounded-lg"
               />
