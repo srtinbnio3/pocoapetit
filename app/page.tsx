@@ -62,9 +62,6 @@ export default async function Home() {
                 桜坂の閑静な住宅街に佇む一軒家レストランで、落ち着いた雰囲気の中、
                 大切な方との特別な日に、また日常の贅沢として、心に残るお食事のひとときをご堪能ください。
               </p>
-              <Button variant="default" size="lg">
-                詳しく見る
-              </Button>
             </div>
           </div>
         </div>
