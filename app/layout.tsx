@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Noto_Sans_JP, Cormorant } from 'next/font/google';
 import { cn } from '@/lib/utils';
 import StructuredData from '@/components/structured-data';
+import { Analytics } from "@vercel/analytics/next";
 
 const notoSansJP = Noto_Sans_JP({ 
   subsets: ['latin'],
@@ -87,6 +88,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <StructuredData />
         <main>{children}</main>
+        <Analytics />
       </body>
     </html>
   );
