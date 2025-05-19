@@ -17,7 +17,7 @@ const cormorant = Cormorant({
 });
 
 export const metadata: Metadata = {
-  title: 'POCO A PETIT - 福岡・桜坂の創作和フレンチ',
+  title: 'POCO A PETIT(ポコアペティ)',
   description: '福岡・桜坂で愛され続ける創作和フレンチレストラン「POCO A PETIT」。伝統的なフレンチと和の技法を融合させた独創的な料理をご提供いたします。',
   keywords: '創作和フレンチ, 福岡, 桜坂, レストラン, フレンチ, 和食, 料理, ディナー, ランチ',
   authors: [{ name: 'POCO A PETIT' }],
