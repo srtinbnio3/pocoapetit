@@ -14,7 +14,7 @@ export default function ConceptPage() {
           <img
             src="/ConceptHeroSection.JPG"
             alt="Concept header"
-            className="w-full h-full object-cover object-[100%_0%] scale-125 md:object-[50%_20%] md:scale-125"
+            className="w-full h-full object-cover object-right-top scale-100 md:object-[50%_20%] md:scale-125"
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
