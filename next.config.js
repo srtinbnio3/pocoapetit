@@ -13,6 +13,20 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
+  // 本番環境でのドメイン設定
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Host',
+            value: 'pocoapetit.com',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
