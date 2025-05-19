@@ -197,7 +197,7 @@ export default function MenuPage() {
                         <p className="text-lg">自家製パン</p>
                       </div>
                       <div className="text-center space-y-2">
-                        <p className="text-lg">メインディッシュお肉料理「国産牛ホホ肉の赤ワイン煮込み」</p>
+                        <p className="text-lg">メインディッシュお肉料理<br />「国産牛ホホ肉の赤ワイン煮込み」</p>
                       </div>
                       <div className="text-center space-y-2">
                         <p className="text-lg">季節のSTAUBご飯</p>
@@ -240,8 +240,7 @@ export default function MenuPage() {
                       <p>
                         当店のスペシャリテである蕎麦粉のカヌレです。
                         <br />
-                        蕎麦粉とラム酒が合わさる事で唯一無二の香りを楽しめ
-                        <br />
+                        蕎麦粉とラム酒が合わさる事で唯一無二の香りを楽しめ、
                         外はカリッと、中はしっとり食感にこだわったカヌレです。
                       </p>
                       <p>
