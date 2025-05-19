@@ -30,13 +30,14 @@ export default function MenuPage() {
         <div className="container-custom max-w-4xl">
           <div className="text-center mb-16">
             <p className="text-lg text-muted-foreground mb-4">
-              旬の食材と伝統的なフレンチの技法、そして和の要素を織り交ぜた
+              旬の食材と伝統的なフレンチの技法、そして和の要素を織り交ぜたシェフ渾身のコースメニューをご用意しております。
               <br />
-              シェフ渾身のコースメニューをご用意しております
+              コースはランチ＆ディナー共通のコースでご用意してます。（ランチ限定コースもあり）
             </p>
             <p className="text-sm text-muted-foreground">
               ※食材の仕入れ状況により、メニュー内容が変更になる場合がございます
             </p>
+            <p className=''></p>
           </div>
         </div>
       </section>
@@ -108,7 +109,7 @@ export default function MenuPage() {
               <Card>
                 <CardContent className="p-12">
                   <div className="text-center mb-8">
-                    <h3 className="text-3xl font-serif mb-4">(ランチ/ディナー共通)スタンダードコース</h3>
+                    <h3 className="text-3xl font-serif mb-4">スタンダードコース</h3>
                     <p className="text-xl font-serif mb-4">Standard Course</p>
                     <p className="text-2xl font-serif">¥5,500</p>
                     <p className="text-sm text-muted-foreground">(税込)</p>
@@ -169,7 +170,7 @@ export default function MenuPage() {
               <Card>
                 <CardContent className="p-12">
                   <div className="text-center mb-8">
-                    <h3 className="text-3xl font-serif mb-4">(ランチ/ディナー共通)メインディッシュ「牛ホホ肉赤ワイン煮」コース</h3>
+                    <h3 className="text-3xl font-serif mb-4">メインディッシュ「牛ホホ肉赤ワイン煮」コース</h3>
                     <p className="text-xl font-serif mb-4">Beef Cheek Course</p>
                     <p className="text-2xl font-serif">¥6,600</p>
                     <p className="text-sm text-muted-foreground">(税込)</p>

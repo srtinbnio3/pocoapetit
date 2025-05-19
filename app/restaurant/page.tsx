@@ -95,8 +95,7 @@ export default function AccessPage() {
               <h3 className="text-xl font-serif mb-4">営業時間</h3>
               <div className="space-y-6 text-muted-foreground">
                   <p className="font-medium text-foreground mb-2">【ランチ】</p>
-                  <p>平日　12:00 一斉スタートのみ</p>
-                  <p>土日祝　11:30・13:30 スタートの2部制</p>
+                  <p>12:00 一斉スタートのみ</p>
                 <div>
                   <p className="font-medium text-foreground mb-2">【ディナー】</p>
                   <p>《コース》18:00〜19:00の間でお好きなお時間をお選びいただけます</p>
@@ -108,7 +107,7 @@ export default function AccessPage() {
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
             <Card>
               <CardContent className="p-8">
                 <Utensils className="w-8 h-8 text-primary mb-4" />
@@ -122,6 +121,28 @@ export default function AccessPage() {
             </Card>
             <Card>
               <CardContent className="p-8">
+                <div className="w-8 h-8 text-primary mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 2a5 5 0 0 1 5 5v2a5 5 0 0 1-10 0V7a5 5 0 0 1 5-5z" />
+                    <path d="M8 14v.5a4 4 0 0 0 8 0V14" />
+                    <path d="M12 2v2" />
+                    <path d="M12 20v2" />
+                    <path d="M4 9h2" />
+                    <path d="M18 9h2" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-serif mb-4">お子様について</h3>
+                <div className="space-y-2 text-muted-foreground">
+                  <p className="text-2xl font-medium text-foreground">ベビーカー入店OK</p>
+                  <p className="pt-4 border-t text-sm">※お子様のご利用はご予約時にお伝えください。</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          {/* 駐車場と住所情報を横並びにするグリッド */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+            <Card>
+              <CardContent className="p-8">
                 <Car className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-xl font-serif mb-4">駐車場</h3>
                 <div className="space-y-2 text-muted-foreground">
@@ -130,40 +151,38 @@ export default function AccessPage() {
                 </div>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <Card>
-                <CardContent className="p-8">
-                  <div className="space-y-8">
-                    <div className="flex items-start gap-4">
-                      <MapPin className="w-6 h-6 text-primary mt-1" />
-                      <div>
-                        <h3 className="font-serif text-lg mb-2">住所</h3>
-                        <p>〒810-0024<br />福岡県福岡市中央区桜坂２丁目７−１１ Ｙｏｓｈｉｄａ Ｈｏｕｓｅ 101</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-4">
-                      <Train className="w-6 h-6 text-primary mt-1" />
-                      <div>
-                        <h3 className="font-serif text-lg mb-2">電車でお越しの場合</h3>
-                        <ul className="space-y-2">
-                          <li>・地下鉄七隈線 桜坂駅より徒歩5分</li>
-                          <li>・西鉄バス 桜坂バス停より徒歩5分</li>
-                        </ul>
-                      </div>
+            <Card>
+              <CardContent className="p-8">
+                <div className="space-y-8">
+                  <div className="flex items-start gap-4">
+                    <MapPin className="w-6 h-6 text-primary mt-1" />
+                    <div>
+                      <h3 className="font-serif text-lg mb-2">住所</h3>
+                      <p>〒810-0024<br />福岡県福岡市中央区桜坂２丁目７−１１ Ｙｏｓｈｉｄａ Ｈｏｕｓｅ 101</p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="rounded-lg overflow-hidden">
+                  <div className="flex items-start gap-4">
+                    <Train className="w-6 h-6 text-primary mt-1" />
+                    <div>
+                      <h3 className="font-serif text-lg mb-2">電車でお越しの場合</h3>
+                      <ul className="space-y-2">
+                        <li>・地下鉄七隈線 桜坂駅より徒歩5分</li>
+                        <li>・西鉄バス 桜坂バス停より徒歩5分</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          {/* 地図を一番下に中央寄せで表示 */}
+          <div className="flex justify-center mt-12">
+            <div className="rounded-lg overflow-hidden w-full max-w-2xl">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.9797367238248!2d130.38439247637405!3d33.57987537333846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193b2162cbac7%3A0x41c4e08711f30949!2zUE9DTyBBIFBFVElUKOODneOCs-OCouODmuODhuOCoynmoZzlnYI!5e0!3m2!1sja!2sjp!4v1742553678193!5m2!1sja!2sjp"
                 width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '500px' }}
+                height="400"
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
