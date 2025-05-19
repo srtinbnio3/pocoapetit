@@ -126,6 +126,27 @@ export default function ConceptPage() {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
+            <div className="aspect-square">
+              <img
+                src="/GallerySection4.JPG"
+                alt="Gallery image 4"
+                className="w-full h-full object-cover object-[100%_0%] rounded-lg"
+              />
+            </div>
+            <div className="aspect-square">
+              <img
+                src="/GallerySection5.JPG"
+                alt="Gallery image 5"
+                className="w-full h-full object-cover object-[90%_0%]  rounded-lg"
+              />
+            </div>
+            <div className="aspect-square">
+              <img
+                src="/GallerySection7.JPG"
+                alt="Gallery image 7"
+                className="w-full h-full object-cover object-[0%_100%] rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
