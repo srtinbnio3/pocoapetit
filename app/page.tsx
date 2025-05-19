@@ -220,44 +220,6 @@ export default async function Home() {
             <Instagram className="w-6 h-6" />
             <h2 className="heading-md">Instagram</h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {instagramPosts && instagramPosts.length > 0 ? (
-              instagramPosts.map((post) => (
-                <a
-                  key={post.id}
-                  href={post.permalink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group aspect-square overflow-hidden rounded-lg relative"
-                >
-                  <img
-                    src={post.media_url}
-                    alt={post.caption?.slice(0, 100) || '料理の写真'}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <p className="text-white text-sm px-4 text-center line-clamp-3">
-                      {post.caption || ''}
-                    </p>
-                  </div>
-                </a>
-              ))
-            ) : (
-              <>
-                {[1, 2, 3, 4].map((i) => (
-                  <div
-                    key={i}
-                    className="aspect-square rounded-lg bg-muted-foreground/10 flex flex-col items-center justify-center p-4 text-center space-y-2"
-                  >
-                    <Instagram className="w-8 h-8 text-muted-foreground/50" />
-                    <p className="text-sm text-muted-foreground">
-                      Instagram投稿を読み込めませんでした
-                    </p>
-                  </div>
-                ))}
-              </>
-            )}
-          </div>
           <div className="text-center mt-8">
             <a
               href="https://www.instagram.com/poco_a_petit/"
