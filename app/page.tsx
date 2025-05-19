@@ -32,7 +32,16 @@ export default async function Home() {
         </div>
         <div className="relative h-full flex items-center justify-center text-white text-center">
           <div>
-            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium tracking-wider mb-6">POCO A PETIT</h1>
+            <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium tracking-wider mb-6">
+              <span className="md:hidden">
+                POCO
+                <br />
+                A
+                <br />
+                PETIT
+              </span>
+              <span className="hidden md:inline">POCO A PETIT</span>
+            </h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto">
               福岡・桜坂で愛され続ける創作和フレンチ。
               <br />
@@ -59,6 +68,7 @@ export default async function Home() {
               <p className="text-lg mb-6 leading-relaxed">
                 "少しずつ色々楽しむ"をコンセプトに、名物の【9種の前菜小鉢プレート】をはじめ、
                 様々な味わいを一度にお楽しみいただける料理の数々をご提供いたします。
+                <br />
                 桜坂の閑静な住宅街に佇む一軒家レストランで、落ち着いた雰囲気の中、
                 大切な方との特別な日に、また日常の贅沢として、心に残るお食事のひとときをご堪能ください。
               </p>
@@ -82,7 +92,9 @@ export default async function Home() {
                 <h3 className="text-xl font-serif mb-2">(ランチ限定)ライトコース</h3>
                 <p className="text-muted-foreground mb-4">
                   カジュアルに当店のお料理をお楽しみいただけるランチ限定のライトコースです。
+                  <br />
                   旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                  <br />
                   12品のお料理と3品のデザートを少しずつ様々な味わいをご堪能ください。
                 </p>
                 <p className="font-serif text-lg">¥3,800</p>
@@ -98,7 +110,9 @@ export default async function Home() {
                 <h3 className="text-xl font-serif mb-2">(ランチ/ディナー共通)スタンダードコース</h3>
                 <p className="text-muted-foreground mb-4">
                   クマのモナカを使用したアミューズ、メインディッシュのお肉料理、デザートまで当店の魅力を最大限楽しめるコースです。
+                  <br />
                   旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                  <br />
                   14品のお料理と4品のデザートを少しずつ様々な味わいをご堪能ください。
                 </p>
                 <p className="font-serif text-lg">¥5,500</p>
@@ -114,7 +128,9 @@ export default async function Home() {
                 <h3 className="text-xl font-serif mb-2">(ランチ/ディナー共通)メインディッシュ「牛ホホ肉赤ワイン煮コース」</h3>
                 <p className="text-muted-foreground mb-4">
                   スタンダードコースのメインディッシュお肉料理を「国産牛ほほ肉の赤ワイン煮込み」でお楽しみいただける特別なコースです。
+                  <br />
                   旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                  <br />
                   14品のお料理と4品のデザートを少しずつ様々な味わいをご堪能ください。
                 </p>
                 <p className="font-serif text-lg">¥6,600</p>
@@ -130,7 +146,9 @@ export default async function Home() {
                 <h3 className="text-xl font-serif mb-2">【TAKE OUT】sobacoカヌレ</h3>
                 <p className="text-muted-foreground mb-4">
                   当店のスペシャリテである蕎麦粉のカヌレです。
+                  <br />
                   蕎麦粉とラム酒が合わさる事で唯一無二の香りを楽しめ
+                  <br />
                   外はカリッと、中はしっとり食感にこだわったカヌレです。
                 </p>
                 <p className="font-serif text-lg">¥450</p>
@@ -177,7 +195,7 @@ export default async function Home() {
                   <Phone className="w-6 h-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-serif text-lg mb-2">ご予約</h3>
-                    <p>こちらからお願いします</p>
+                    <p>TableCheckから24時間受付中。空席情報もこちらからご確認いただけます。</p>
                   </div>
                 </div>
                 <Button size="lg" className="w-full" asChild>

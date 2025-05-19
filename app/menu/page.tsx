@@ -65,7 +65,9 @@ export default function MenuPage() {
                   <div className="max-w-2xl mx-auto">
                     <p className="text-lg text-center mb-8">
                       カジュアルに当店のお料理をお楽しみいただけるランチ限定のライトコースです。
+                      <br />
                       旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                      <br />
                       12品のお料理と3品のデザートを少しずつ様々な味わいをご堪能ください。
                     </p>
                     <div className="space-y-6">
@@ -80,7 +82,7 @@ export default function MenuPage() {
                       </div>
                       <div className="text-center space-y-2">
                         <p className="text-lg">季節のSTAUBごはん</p>
-                        <p className="text-sm text-muted-foreground">(例:自家製パンチェッタとそら豆、ペコリーノチーズのご飯)</p>
+                        <p className="text-sm text-muted-foreground">(例:とうもろこしとサマートリュフのご飯)</p>
                       </div>
                       <div className="text-center">
                         <p className="text-lg">小さなお菓子3種盛り合わせ</p>
@@ -114,7 +116,9 @@ export default function MenuPage() {
                   <div className="max-w-2xl mx-auto">
                     <p className="text-lg text-center mb-8">
                       クマのモナカを使用したアミューズ、メインディッシュのお肉料理、デザートまで当店の魅力を最大限楽しめるコースです。
+                      <br />
                       旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                      <br />
                       14品のお料理と4品のデザートを少しずつ様々な味わいをご堪能ください。
                     </p>
                     <div className="space-y-6">
@@ -136,7 +140,7 @@ export default function MenuPage() {
                       </div>
                       <div className="text-center space-y-2">
                         <p className="text-lg">季節のSTAUBご飯</p>
-                        <p className="text-sm text-muted-foreground">(例:自家製パンチェッタとそら豆、ペコリーノチーズのご飯)</p>
+                        <p className="text-sm text-muted-foreground">(例:とうもろこしとサマートリュフのご飯)</p>
                       </div>
                       <div className="text-center">
                         <p className="text-lg">今月のデセール</p>
@@ -173,7 +177,9 @@ export default function MenuPage() {
                   <div className="max-w-2xl mx-auto">
                     <p className="text-lg text-center mb-8">
                       スタンダードコースのメインディッシュお肉料理を「国産牛ほほ肉の赤ワイン煮込み」でお楽しみいただける特別なコースです。
+                      <br />
                       旬のお野菜を美味しさを活かすフレンチベースに和食のエッセンスを散りばめたお料理。
+                      <br />
                       14品のお料理と4品のデザートを少しずつ様々な味わいをご堪能ください。
                     </p>
                     <div className="space-y-6">
@@ -194,7 +200,7 @@ export default function MenuPage() {
                       </div>
                       <div className="text-center space-y-2">
                         <p className="text-lg">季節のSTAUBご飯</p>
-                        <p className="text-sm text-muted-foreground">(例:自家製パンチェッタとそら豆、ペコリーノチーズのご飯)</p>
+                        <p className="text-sm text-muted-foreground">(例:とうもろこしとサマートリュフのご飯)</p>
                       </div>
                       <div className="text-center">
                         <p className="text-lg">今月のデセール</p>
@@ -232,7 +238,9 @@ export default function MenuPage() {
                     <div className="text-lg text-center space-y-4">
                       <p>
                         当店のスペシャリテである蕎麦粉のカヌレです。
+                        <br />
                         蕎麦粉とラム酒が合わさる事で唯一無二の香りを楽しめ
+                        <br />
                         外はカリッと、中はしっとり食感にこだわったカヌレです。
                       </p>
                       <p>

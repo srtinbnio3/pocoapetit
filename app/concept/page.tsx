@@ -48,7 +48,9 @@ export default function ConceptPage() {
               <h3 className="heading-md mb-6">心地よい空間で</h3>
               <p className="text-lg leading-relaxed">
                 桜坂の閑静な住宅街に佇む一軒家レストラン。
+                <br />
                 落ち着いた雰囲気の中で、ゆったりとしたお時間をお過ごしください。
+                <br />
                 大切な方との特別な日に、日常の贅沢として、
                 様々なシーンでご利用いただけます。
               </p>
@@ -67,6 +69,7 @@ export default function ConceptPage() {
                 <h3 className="text-xl font-serif mb-4">名物の前菜プレート</h3>
                 <p className="text-muted-foreground">
                   9種の前菜小鉢プレートは、シェフの創意工夫が詰まった自慢の一品。
+                  <br />
                   様々な味わいを少しずつお楽しみいただけます。
                 </p>
               </CardContent>
@@ -78,6 +81,7 @@ export default function ConceptPage() {
                 <h3 className="text-xl font-serif mb-4">カジュアルなワイン</h3>
                 <p className="text-muted-foreground">
                   ソムリエが厳選した、気軽に楽しめるワインをご用意。
+                  <br />
                   お料理に合わせたペアリングもご提案いたします。
                 </p>
               </CardContent>
