@@ -10,11 +10,11 @@ export default function ConceptPage() {
       
       {/* Hero Section */}
       <section className="relative h-[50vh]">
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            src="/ConceptHeroSection.JPG"
             alt="Concept header"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[100%_0%] scale-140 md:object-[50%_20%] md:scale-125"
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
