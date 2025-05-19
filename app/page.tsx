@@ -107,7 +107,7 @@ export default async function Home() {
                   alt="Standard Course"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-xl font-serif mb-2">(ランチ/ディナー共通)スタンダードコース</h3>
+                <h3 className="text-xl font-serif mb-2">スタンダードコース</h3>
                 <p className="text-muted-foreground mb-4">
                   クマのモナカを使用したアミューズ、メインディッシュのお肉料理、デザートまで当店の魅力を最大限楽しめるコースです。
                   <br />
@@ -125,7 +125,7 @@ export default async function Home() {
                   alt="Beef Cheek Course"
                   className="w-full aspect-[4/3] object-cover rounded-lg mb-4"
                 />
-                <h3 className="text-xl font-serif mb-2">(ランチ/ディナー共通)メインディッシュ「牛ホホ肉赤ワイン煮コース」</h3>
+                <h3 className="text-xl font-serif mb-2">メインディッシュ「牛ホホ肉赤ワイン煮」コース</h3>
                 <p className="text-muted-foreground mb-4">
                   スタンダードコースのメインディッシュお肉料理を「国産牛ほほ肉の赤ワイン煮込み」でお楽しみいただける特別なコースです。
                   <br />
