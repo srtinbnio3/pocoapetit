@@ -33,7 +33,7 @@ export default async function Home() {
         <div className="relative h-full flex items-center justify-center text-white text-center">
           <div>
             <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl font-medium tracking-wider mb-6">
-              <span className="md:hidden text-left block mx-auto w-fit">
+              <span className="md:hidden text-center block">
                 POCO
                 <br />
                 A
