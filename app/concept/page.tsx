@@ -12,9 +12,9 @@ export default function ConceptPage() {
       <section className="relative h-[50vh]">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/ConceptHeroSection.JPG"
+            src="/ConceptHero.jpg"
             alt="Concept header"
-            className="w-full h-full object-cover object-top scale-100 md:object-[50%_20%] md:scale-100"
+            className="w-full h-full object-cover object-center scale-100 md:object-center md:scale-100"
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
