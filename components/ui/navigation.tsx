@@ -58,6 +58,9 @@ export default function Navigation() {
                   <Link href="/menu">Menu</Link>
                 </Button>
                 <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
+                  <Link href="/cannele">Cannelé</Link>
+                </Button>
+                <Button variant="ghost" asChild className="font-serif tracking-wide text-lg">
                   <Link href="/restaurant">Restaurant</Link>
                 </Button>
                 {/* RecruitとContactページは一時的に非表示
@@ -85,6 +88,9 @@ export default function Navigation() {
               </Button>
               <Button variant="ghost" asChild className="font-serif tracking-wide text-lg w-full justify-start">
                 <Link href="/menu">Menu</Link>
+              </Button>
+              <Button variant="ghost" asChild className="font-serif tracking-wide text-lg w-full justify-start">
+                <Link href="/cannele">Cannelé</Link>
               </Button>
               <Button variant="ghost" asChild className="font-serif tracking-wide text-lg w-full justify-start">
                 <Link href="/restaurant">Restaurant</Link>
