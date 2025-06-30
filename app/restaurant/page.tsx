@@ -101,7 +101,10 @@ export default function AccessPage() {
                   <p>《コース》18:00〜19:00の間でお好きなお時間をお選びいただけます</p>
                 </div>
                 <p className="pt-4 border-t">
-                  店休日は不定休です、営業日は<a href="https://www.instagram.com/poco_a_petit/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:underline">Instagram</a>からご確認ください。
+                <p className="font-medium text-foreground mb-2">【店休日】</p>
+                水・木曜日 + 不定休
+                <br />
+                ※日曜日はカヌレ販売のみ
                 </p>
               </div>
             </CardContent>

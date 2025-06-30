@@ -29,9 +29,16 @@ export default function ConceptPage() {
           <div className="text-center mb-16">
             <h2 className="heading-md mb-8">"少しずつ色々楽しむ"</h2>
             <p className="text-lg leading-relaxed mb-8">
-              福岡市桜坂の閑静な住宅街の中にある、カジュアルフレンチレストラン「POCO A PETIT」。
+              福岡市桜坂の閑静な住宅街の中にある
               <br />
-              名物の【9種の前菜小鉢プレート】をはじめ、少しずつ様々な味わいをお楽しみいただける
+              カジュアルフレンチレストラン
+              <br />
+              「POCO A PETIT」
+              <br />
+              <br />
+              名物の【9種の前菜小鉢プレート】
+              <br />
+              をはじめ少しずつ様々な味わいをお楽しみいただける
               料理の数々で、特別な食事のひとときをご提供いたします。
             </p>
           </div>
