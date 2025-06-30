@@ -41,7 +41,12 @@ export default function CanelePage() {
           <div className="text-center mb-16">
             <h2 className="heading-md mb-8">Brand Story</h2>
             <p className="text-lg leading-relaxed mb-8">
-              ありがたい事に沢山のお客様にカヌレを気に入っていただき、
+              当店のスペシャリテのデザートとして
+              <br />
+              お出ししている蕎麦粉のカヌレ
+              <br />
+              <br />
+              ご自宅でもお楽しみいただけるよう
               <br />
               蕎麦粉のカヌレ専門ブランド
               <br />
@@ -103,7 +108,9 @@ export default function CanelePage() {
           <div className="text-center mb-16">
             <h2 className="heading-md mb-8">3つの味わい</h2>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-              蕎麦粉のカヌレは定番で3種の味わい《ボルドー》《蜂蜜》《ショコラ》をご用意しています。
+              蕎麦粉のカヌレは定番で3種の味わい
+              <br />
+              《ボルドー》《蜂蜜》《ショコラ》をご用意しています。
             </p>
           </div>
           
