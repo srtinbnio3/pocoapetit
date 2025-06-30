@@ -30,7 +30,12 @@ export default function MenuPage() {
         <div className="container-custom max-w-4xl">
           <div className="text-center mb-16">
             <p className="text-lg text-muted-foreground mb-4">
-              旬の食材と伝統的なフレンチの技法、そして和の要素を織り交ぜたシェフ渾身のコースメニューをご用意しております。
+              旬の食材と伝統的なフレンチの技法
+              <br />
+              和の要素を織り交ぜたシェフ渾身の
+              <br />
+              コースメニューをご用意しております。
+              <br />
               <br />
               コースはランチ＆ディナー共通のコースでご用意してます。（ランチ限定コースもあり）
             </p>
