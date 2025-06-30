@@ -208,23 +208,25 @@ export default function CanelePage() {
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
                 <Package className="w-12 h-12 text-primary mx-auto mb-6" />
-                <h3 className="text-xl font-serif mb-4">全国配送準備中</h3>
-                <div className="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full mb-4">
-                  Coming Soon
-                </div>
+                <h3 className="text-xl font-serif mb-4">ネット販売</h3>
                 <p className="text-muted-foreground mb-6">
-                  遠方のお客様にも楽しんでいただけるよう
+                  遠方のお客様にも
                   <br />
-                  ネット注文可能な全国配送に向けて
+                  お楽しみいただけるよう
                   <br />
-                  準備を進めています
+                  専用サイトからご注文いただけます
                 </p>
                 <Button 
-                  variant="outline" 
-                  disabled 
-                  className="opacity-50 cursor-not-allowed"
+                  asChild
+                  variant="outline"
                 >
-                  通販サイト（準備中）
+                  <a 
+                    href="https://pocoapetit.base.shop/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    通販サイト
+                  </a>
                 </Button>
               </CardContent>
             </Card>
