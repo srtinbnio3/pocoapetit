@@ -1,7 +1,7 @@
 import Navigation from '@/components/ui/navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Instagram, Calendar, Package, Utensils } from 'lucide-react';
+import { Instagram, Calendar, Package, Utensils, Wine, Flower2, Heart } from 'lucide-react';
 import Footer from '@/components/ui/footer';
 import { Metadata } from 'next';
 
@@ -102,17 +102,17 @@ export default function CanelePage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="heading-md mb-8">3つの味わい</h2>
-            <p className="text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed max-w-3xl mx-auto">
               蕎麦粉のカヌレは定番で3種の味わい《ボルドー》《蜂蜜》《ショコラ》をご用意しています。
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-white font-serif text-xl font-bold">B</span>
+                    <Wine className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-serif mb-2">《ボルドー》</h3>
                   <p className="text-sm text-primary font-medium">フラッグシップ</p>
@@ -125,11 +125,11 @@ export default function CanelePage() {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-400 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-white font-serif text-xl font-bold">蜜</span>
+                    <Flower2 className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-serif mb-2">《蜂蜜》</h3>
                   <p className="text-sm text-primary font-medium">アルコール不使用</p>
@@ -143,17 +143,16 @@ export default function CanelePage() {
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-amber-700 to-amber-900 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-white font-serif text-xl font-bold">C</span>
+                    <Heart className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-serif mb-2">《ショコラ》</h3>
                   <p className="text-sm text-primary font-medium">アルコール不使用・リッチな仕上がり</p>
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
-                  伝統的なカヌレにはラム酒が使われますがこちらの《ショコラ》はアルコール類不使用。
                   長野県の鈴木養蜂場さんのそば蜂蜜を贅沢に使用し深みのある香りと優しい甘みに
                   クーベルチュールチョコレートをたっぷり加えリッチな仕上がりに。
                   ケーキのようなしっとりとした食感と蕎麦の実のカリッとした食感のコントラストをお楽しみください。
@@ -165,51 +164,61 @@ export default function CanelePage() {
       </section>
 
       {/* Sales Information Section */}
-      <section className="py-24 bg-white">
-        <div className="container-custom">
+      <section className="py-24 bg-muted">
+        <div className="container-custom max-w-5xl">
           <h2 className="heading-md text-center mb-12">販売について</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
                 <Utensils className="w-12 h-12 text-primary mx-auto mb-6" />
-                <h3 className="text-xl font-serif mb-4">現在の販売</h3>
+                <h3 className="text-xl font-serif mb-4">TAKE OUT</h3>
                 <p className="text-muted-foreground mb-4">
-                  店内でお食事のお客様のみ
+                  レストランご利用のお客様は、
                   <br />
-                  ご購入可能です
+                  ご予約時にご注文いただければTAKE OUTのご用意可能です​
                 </p>
                 <p className="font-serif text-lg text-primary">¥450</p>
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
                 <Calendar className="w-12 h-12 text-primary mx-auto mb-6" />
-                <h3 className="text-xl font-serif mb-4">7月から開始予定</h3>
+                <h3 className="text-xl font-serif mb-4">イートイン</h3>
                 <p className="text-muted-foreground mb-4">
                   《毎週日曜日限定》で
                   <br />
-                  テイクアウト販売&イートイン可能な
+                  予約なしでもお買い求めいただける
                   <br />
-                  カフェ営業を行います✨
+                  テイクアウト販売&カフェ営業を行います✨
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  (場所は POCO A PETITです)
+                  (場所は POCO A PETIT)
                 </p>
               </CardContent>
             </Card>
             
-            <Card>
+            <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
                 <Package className="w-12 h-12 text-primary mx-auto mb-6" />
                 <h3 className="text-xl font-serif mb-4">全国配送準備中</h3>
-                <p className="text-muted-foreground">
+                <div className="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                  Coming Soon
+                </div>
+                <p className="text-muted-foreground mb-6">
                   遠方のお客様にも楽しんでいただけるよう
                   <br />
                   ネット注文可能な全国配送に向けて
                   <br />
                   準備を進めています
                 </p>
+                <Button 
+                  variant="outline" 
+                  disabled 
+                  className="opacity-50 cursor-not-allowed"
+                >
+                  通販サイト（準備中）
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -220,30 +229,33 @@ export default function CanelePage() {
       <section className="py-24 bg-white">
         <div className="container-custom text-center">
           <h2 className="heading-md mb-8">Follow Us</h2>
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-muted rounded-lg p-8 mb-8">
-              <Instagram className="w-16 h-16 text-primary mx-auto mb-6" />
-              <h3 className="text-2xl font-serif mb-4">sobaco no cannelé</h3>
-              <p className="text-lg mb-6">
-                蕎麦粉のカヌレ専用のアカウント
-              </p>
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
-              >
-                <a 
-                  href="https://www.instagram.com/sobaco_no_cannele/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
+          <div className="max-w-lg mx-auto">
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-12">
+                <Instagram className="w-16 h-16 text-primary mx-auto mb-6" />
+                <h3 className="text-2xl font-serif mb-4">sobaco no cannelé</h3>
+                <p className="text-lg mb-6 text-muted-foreground">
+                  蕎麦粉のカヌレ専用のアカウント
+                  <br />
+                  最新情報をお届けします
+                </p>
+                <Button 
+                  asChild 
+                  size="lg" 
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
                 >
-                  <Instagram className="w-5 h-5" />
-                  @sobaco_no_cannele
-                </a>
-              </Button>
-            </div>
-            
+                  <a 
+                    href="https://www.instagram.com/sobaco_no_cannele/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    <Instagram className="w-5 h-5" />
+                    @sobaco_no_cannele
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
