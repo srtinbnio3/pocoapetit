@@ -33,7 +33,7 @@ export default function AccessPage() {
             <div className="space-y-6">
               <h2 className="heading-md">POCO A PETIT</h2>
               <p className="text-lg leading-relaxed">
-                福岡・桜坂の閑静な住宅街に佇む一軒家レストラン。
+                福岡・桜坂の閑静な住宅街に佇む小さなレストラン。
                 <br />
                 フランス料理の伝統と和の技法を融合させた独創的な料理を、
                 落ち着いた空間でお楽しみいただけます。

@@ -54,7 +54,7 @@ export default function ConceptPage() {
             <div>
               <h3 className="heading-md mb-6">心地よい空間で</h3>
               <p className="text-lg leading-relaxed">
-                桜坂の閑静な住宅街に佇む一軒家レストラン
+                桜坂の閑静な住宅街に佇む小さなレストラン
                 <br />
                 落ち着いた雰囲気の中でゆったりとしたお時間をお過ごしください。
                 <br />
