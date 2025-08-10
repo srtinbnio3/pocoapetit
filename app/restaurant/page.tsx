@@ -98,13 +98,11 @@ export default function AccessPage() {
                   <p>12:00 一斉スタートのみ</p>
                 <div>
                   <p className="font-medium text-foreground mb-2">【ディナー】</p>
-                  <p>《コース》18:00〜19:00の間でお好きなお時間をお選びいただけます</p>
+                  <p>18:00~22:30(20:00最終入店)</p>
                 </div>
                 <p className="pt-4 border-t">
                 <p className="font-medium text-foreground mb-2">【店休日】</p>
                 水・木曜日 + 不定休
-                <br />
-                ※日曜日はカヌレ販売のみ
                 </p>
               </div>
             </CardContent>
