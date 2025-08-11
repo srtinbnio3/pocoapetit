@@ -102,7 +102,7 @@ export default function AccessPage() {
                 </div>
                 <p className="pt-4 border-t">
                 <p className="font-medium text-foreground mb-2">【店休日】</p>
-                水・木曜日 + 不定休
+                <p>水・木曜日 + 不定休。営業日は<a href="https://www.instagram.com/poco_a_petit/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:underline">Instagram</a>からご確認ください</p>
                 </p>
               </div>
             </CardContent>

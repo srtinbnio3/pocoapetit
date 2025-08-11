@@ -192,7 +192,7 @@ export default async function Home() {
                     <h3 className="font-serif text-lg mb-2">営業時間</h3>
                     <p>ランチ：12:00一斉スタートのみです</p>
                     <p>ディナー：18:00~22:30(20:00最終入店)
-                    <br />定休日：不定休です、営業日は<a href="https://www.instagram.com/poco_a_petit/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:underline">Instagram</a>からご確認ください</p>
+                    <br />水・木曜日 + 不定休。営業日は<a href="https://www.instagram.com/poco_a_petit/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:underline">Instagram</a>からご確認ください</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
